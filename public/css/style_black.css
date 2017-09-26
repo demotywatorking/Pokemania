@@ -1,0 +1,103 @@
+.jeden
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    /*#374147*/
+}
+.jeden:hover, .dwa:hover
+{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.dwa
+{
+	background-color: rgba(0, 0, 0, 0.45);
+	/*#465259*/
+}
+.trzy
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.jeden_ttlo
+{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.dwa_ttlo
+{
+    background-color: rgba(0, 0, 0, 0.45) !important;
+} 
+.alert-info, .btn-primary, .disabled.btn-primary:hover
+{
+    background-color:rgba(51, 122, 183, 0.45);
+    border-color:#337ab7;
+}
+.btn-info
+{
+    background-color:rgba(91, 192, 222, 0.45);
+    border-color:#5bc0de;
+}
+.btn-info:hover
+{
+    background-color:rgba(91, 192, 222, 0.6);
+    border-color:#5bc0de;
+}
+.alert-success, .btn-success, .panel-success > .panel-heading
+{
+    background-color:rgba(92, 184, 92, 0.45);
+    border-color:#5cb85c;
+}
+.btn-success:hover
+{
+    background-color:rgba(92, 184, 92, 0.6);
+    border-color:#5cb85c;
+}
+.alert-danger
+{
+    background-color:rgba(217, 83, 79, 0.45);
+    border-color:#d9534f;
+}
+.alert-warning
+{
+    background-color:rgba(240, 173, 78, 0.45);
+    border-color:#f0ad4e;
+}
+.btn-primary:hover
+{
+    background-color:rgba(51, 122, 183, 0.6);
+    border-color:#337ab7;
+}
+.primary-active
+{
+    background-color:rgba(51, 122, 183, 0.85);
+    border-color:#337ab7;
+}
+.targ_oferta
+{
+    background-color:rgba(51, 122, 183, 0.55);
+    border-color:#337ab7;
+}
+.targ_oferta_wlasna
+{
+    background-color:rgba(240, 173, 78, 0.2);
+    border-color:#f0ad4e;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus
+{
+    color: #4477ff;
+    background-color: rgba(0,0,0,0.45);
+}
+.nav-tabs > li > a
+{
+    color:#fff;
+}
+.modal-header
+{
+    background-color:rgba(92, 184, 92, 0.45);
+    border-color:#5cb85c;
+}
+.zielone_tlo_osiagniecie
+{
+    background-color: rgba(19, 209, 57, 0.3) !important;
+}
+.niebieskie_tlo_osiagniecie
+{
+    background-color: rgba(34, 12, 232, 0.3) !important;
+}

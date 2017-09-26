@@ -1,0 +1,476 @@
+html, body
+{
+  height:100%;
+  background: #000000 url("../img/tlo.jpg") no-repeat 0px 0px fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Lato', sans-serif;
+}
+
+.kursor:hover
+{
+	cursor:pointer;
+}
+
+.form_input
+{
+  background:#D9D9D9;
+  padding:6px 12px;
+  color:#FF4040;
+  line-height:1.4;
+  font-size:15px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  color: #555;
+  background-color: #FFF;
+}
+.okienko
+{
+  width: 35px;
+  height:35px;
+  float:left;
+}
+.ladowanie
+{
+  background:url('../img/loader.gif') no-repeat;
+}
+.wszystko_ok
+{
+  background:url('../img/OK.png') no-repeat;
+}
+.cos_zle
+{
+  background:url('../img/NIE_OK.png') no-repeat;
+}
+.form_input:focus
+{
+  border-color: #66AFE9;
+  outline: 0px none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+#content
+{
+  position:relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: auto !important;
+  min-height: 100%;
+  background: url("../img/tlo.png") repeat scroll 0 0 transparent;
+  box-shadow: 0px 0px 5px #000;
+}
+
+#logo
+{
+  padding-top:25px;
+  width:819px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+#zawartosc
+{
+  margin:10px 10px 0 10px;
+  padding:10px;
+  margin-right:auto;
+  margin-left:auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1220px)
+{
+  #content { width:auto !important; padding:10px 20px !important; margin:0 10px!important;}
+  #logowanie, #zawartosc { width:auto !important; margin:10px !important;}
+}
+
+.clear
+{
+  clear:both;
+}
+
+#stopka
+{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-right:auto;
+  margin-left:auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding:10px;
+}
+.informacja
+{
+  width:auto;
+  font-size:27px;
+  color: #BCBCBC;
+  margin:0 auto;
+  text-align:center;
+}
+
+.informacja_stopka
+{
+    width:auto;
+    font-size:17px;
+    color: #BCBCBC;
+    margin:0 auto;
+    text-align:center;
+}
+.info
+{
+    /*background: #000000 none repeat scroll 0 0;*/
+    background: linear-gradient(to bottom, #6DB3F2 0%, #54A3EE 45%, #3690F0 50%, #1E69DE 100%) repeat scroll 0% 0% ;
+    border: 1px solid #423c2c;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    padding: 50px 5px 4px 5px;
+    position: absolute;
+    z-index: 1000;
+    opacity:0.9;
+    box-sizing: border-box;
+}
+#zaloguj, #przypomnij_div, #wylogowano
+{
+  padding:20px 5px 4px 5px;
+  width:500px;
+}
+.info_wylogowano
+{
+  text-align:center;
+  font-size:20px;
+}
+#zaloguj_ponownie
+{
+  width: 250px;
+  height: 40px;
+}
+#zaloguj_zamknij, #zarejestruj_zamknij, #przypomnij_zamknij, #wyloguj_zamknij, #zarejestrowano_zamknij
+{
+  text-align:right;
+  cursor:all-scroll;
+}
+.zamknij_obrazek
+{
+  width:35px;
+  height:35px;
+}
+.info_rejestracja
+{
+    width:600px;
+}
+#naglowek_rejestracja
+{
+    cursor:all-scroll;
+    color:#000000;
+    font-size:19px;
+    border: 1px solid #423c2c;
+    position:absolute;
+    text-align:center;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:45px;
+    background:#61C95F;
+    border-radius: 5px;
+}
+#tekst_naglowek
+{
+  line-height: 2.5;
+}
+.button
+{
+  font-size:25px;
+  display: inline-block;
+  min-width:50px;
+  margin: 0 auto;
+  width: 250px;
+  height: 40px;
+  opacity: 0.75;
+}
+
+.button:hover
+{
+	background-color: #303030;
+}
+
+.button:active
+{
+  background-color: #303030;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
+}
+
+.button_submit
+{
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2.4;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #FFF;
+  background-color: #337AB7;
+  border-color: #2E6DA4;
+}
+.button_submit:focus
+{
+	color:#fff;
+	background-color:#286090;
+	border-color:#122b40
+}
+
+.button_submit:hover
+{
+	color:#fff;
+	background-color:#286090;
+	border-color:#204d74
+}
+
+.rejestracja
+{
+  width:100%;
+  box-sizing: border-box;
+  margin:15px auto;
+  padding:5px;
+}
+.srodek{margin:0 auto; text-align:center;}
+#pok_rejestracja
+{
+  box-sizing: border-box;
+  margin-top:15px;
+  width:240px;
+  height:240px;
+  float:left;
+}
+#img_rej
+{
+  display: block;
+  margin: 0 auto;
+  width:230px;
+  height:230px;
+}
+#captcha
+{
+  box-sizing: border-box;
+  margin-top:45px;
+  padding-left:15px;
+  float:left;
+  width:100%;
+  overflow:hidden;
+}
+.margin_top{margin-top:15px;}
+#przyciski
+{
+  width:100%;
+  margin: 25px auto;
+}
+#wysrodkuj
+{
+  width: 60%;
+  margin: 0 auto;
+  text-align:center;
+  padding:5px;
+}
+
+.rejestracja_div_tekst
+{
+  margin:0 25px 0 0;
+  width:20%;
+  box-sizing: border-box;
+  padding:8px 10px 0 0;
+  text-align:right;
+  float:left;
+}
+.rejestracja_div_input
+{
+  width:74%;
+  float:left;
+  box-sizing: border-box;
+}
+.input_100
+{
+  width:80%;
+  text-align:center;
+  float:left;
+}
+
+.rej_blad, .zal_blad, .przyp_blad
+{
+  width:100%;
+  color:#CC1010;
+  text-align:center;
+  font-size:18px;
+}
+
+.submit_rejestracja
+{
+  width:50%;
+}
+
+.rejestracja_informacja
+{
+    padding:5px;
+    font-size:16px;
+    color:#FFFFFF;
+}
+.rejestracja_informacja a
+{
+  text-decoration:none;
+  color:#F59C11;
+}
+
+.input_200
+{
+  display:block;
+  height:30px;
+  line-height:1.4;
+  width:80%;
+  margin:10px auto 15px auto;
+  text-align:center;
+}
+
+.button_submit2
+{
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #FFF;
+  background-color: #1665A8;
+  border-color: #2E6DA4;
+  font-size:15px;
+  width: 250px;
+  height: 40px;
+}
+.button_submit2:focus
+{
+    color:#fff;
+    background-color:#286090;
+    border-color:#122b40
+}
+
+.button_submit2:hover
+{
+	color:#fff;
+	background-color:#286090;
+	border-color:#204d74;
+}
+.button_submit2:active
+{
+  background-color: #064880;
+  box-shadow: 0 2px #204d74;
+  transform: translateY(3px);
+}
+/*.adsbox
+{
+  height:200px;
+  width:200px;
+  background:yellow;
+}*/
+#informacja
+{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:50px;
+  background:yellow;
+}
+
+#link_p
+{
+  text-decoration:none;
+  color:#F59C11;
+}
+
+#brak_JS
+{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  color:yellow;
+  font-size:40px;
+  text-align:center;
+  padding-top:150px;
+}
+.ui-tooltip, .arrow:after {
+    background: black !important;
+    border: 1px solid white !important;
+  }
+  .ui-tooltip {
+    padding: 5px 15px !important;
+    color: white !important;
+    border-radius: 15px !important;
+    font: bold 14px "Helvetica Neue", Sans-Serif !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 0 6px black !important;
+  }
+  .arrow {
+    width: 70px !important;
+    height: 16px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -35px !important;
+    bottom: -16px !important;
+  }
+  .arrow.top {
+    top: -16px !important;
+    bottom: auto !important;
+  }
+  .arrow.left {
+    left: 20% !important;
+  }
+  .arrow:after {
+    content: "" !important;
+    position: absolute !important;
+    left: 20px !important;
+    top: -20px !important;
+    width: 25px !important;
+    height: 25px !important;
+    box-shadow: 6px 5px 9px -9px black !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+  }
+  .arrow.top:after {
+    bottom: -20px !important;
+    top: auto !important;
+  }
+#nowe
+{
+    margin-top:100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:40%;
+}
+.pokemon_img
+{
+    width:50px;
+    height:50px;
+    float:left;
+}
+.pokemon
+{
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+}

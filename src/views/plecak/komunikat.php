@@ -1,0 +1,2 @@
+<?= isset($this->komunikat) ? '<div class="alert alert-success text-center"><span>' . $this->komunikat . '</span></div>' : '' ?>
+<?= isset($this->blad) ? '<div class="alert alert-danger text-center"><span>' . $this->blad . '</span></div>' : '' ?>
